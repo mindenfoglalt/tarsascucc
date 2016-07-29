@@ -13,12 +13,19 @@
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <dependency.scope>compile</dependency.scope>
-        <spring.version>4.0.5.RELEASE</spring.version>
+        <spring.version>4.1.6.RELEASE</spring.version>
         <jstl.version>1.2</jstl.version>
         <spring.security.version>3.2.8.RELEASE</spring.security.version>
+        <derby.version>10.11.1.1</derby.version>
+	
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.apache.derby</groupId>
+            <artifactId>derby</artifactId>
+            <version>${derby.version}</version>
+        </dependency>
         
         <!-- Spring dependencies -->
         <dependency>
